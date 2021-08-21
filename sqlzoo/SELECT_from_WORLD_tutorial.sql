@@ -66,5 +66,32 @@ WHERE GDP > 1000000000000;
 --Show the name and capital where the name and the capital have the same number of characters.
 --You can use the LENGTH function to find the number of characters in a string
 
+SELECT NAME, CAPITAL
+FROM WORLD
+WHERE LEN(NAME) = LEN(CAPITAL);
+
+-- 12. The capital of Sweden is Stockholm. Both words start with the letter 'S'.
+
+--Show the name and the capital where the first letters of each match. Don't include countries where the name and the capital are the same word.
+--You can use the function LEFT to isolate the first character.
+--You can use <> as the NOT EQUALS operator.
+SELECT NAME, CAPITAL
+FROM WORLD
+WHERE LEFT(NAME,1) = LEFT(CAPITAL,1)
+AND NAME <> CAPITAL;
+
+-- 13. Equatorial Guinea and Dominican Republic have all of the vowels (a e i o u) in the name. They don't count because they have more than one word in the name.
+
+--Find the country that has all the vowels and no spaces in its name.
+--You can use the phrase name NOT LIKE '%a%' to exclude characters from your results.
+--The query shown misses countries like Bahamas and Belarus because they contain at least one 'a'
+SELECT NAME
+FROM WORLD
+WHERE NAME LIKE '%a%'
+AND NAME LIKE '%e%'
+AND NAME LIKE '%i%'
+AND NAME LIKE '%o%'
+AND NAME LIKE '%u%'
+AND NAME NOT LIKE '% %';
 
 
