@@ -45,3 +45,8 @@ FROM NOBEL
 WHERE (YR = '1980' AND SUBJECT = 'Physics') 
 OR
 (YR = '1984' AND SUBJECT = 'Chemistry');
+
+--9. Show the year, subject, and name of winners for 1980 excluding Chemistry and Medicine
+SELECT YR, SUBJECT, WINNER FROM NOBEL
+WHERE YR = '1980'
+AND SUBJECT NOT IN ('Chemistry', 'Medicine');
