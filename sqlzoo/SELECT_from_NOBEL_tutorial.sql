@@ -50,3 +50,39 @@ OR
 SELECT YR, SUBJECT, WINNER FROM NOBEL
 WHERE YR = '1980'
 AND SUBJECT NOT IN ('Chemistry', 'Medicine');
+
+--10. Show year, subject, and name of people who won a 'Medicine' prize in an early year (before 1910, not including 1910) together with winners of a 'Literature' prize in a later year (after 2004, including 2004)
+
+SELECT YR, SUBJECT, WINNER 
+FROM NOBEL
+WHERE (SUBJECT = 'Medicine' AND YR < '1910')
+OR
+(SUBJECT = 'Literature' AND YR >= '2004');
+
+--11. Find all details of the prize won by PETER GRÜNBERG
+SELECT * FROM NOBEL
+WHERE WINNER = 'PETER GRÜNBERG';
+
+--12. 
+--Find all details of the prize won by EUGENE O'NEILL
+--Escaping single quotes
+--You can't put a single quote in a quote string directly. You can use two single quotes within a quoted string.
+
+SELECT * FROM NOBEL
+WHERE WINNER = 'EUGENE O''NEILL';
+
+--13.Knights in order
+--List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
+
+SELECT WINNER, YR, SUBJECT
+FROM NOBEL
+WHERE WINNER LIKE 'Sir%'
+ORDER BY YR DESC, WINNER ASC;
+
+--14. The expression subject IN ('Chemistry','Physics') can be used as a value - it will be 0 or 1.
+--Show the 1984 winners and subject ordered by subject and winner name; but list Chemistry and Physics last.
+
+SELECT WINNER, SUBJECT
+FROM NOBEL
+WHERE YR=1984
+ORDER BY SUBJECT IN ('Physics','Chemistry'),SUBJECT,WINNER;
