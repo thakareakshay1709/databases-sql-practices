@@ -4,4 +4,4 @@
 
 
 Question 1  
-![Nested Select Q1](./databases-sql-practices/sqlzoo/data/nested_sql/nested_select_quiz_1.JPG)
+![Nested Select Q1](./quiz_data/nested_sql/nested_select_quiz_1.JPG)
