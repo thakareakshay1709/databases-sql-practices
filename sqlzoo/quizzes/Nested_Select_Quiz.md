@@ -24,6 +24,7 @@ Question 5
 Question 6
 ![Nested Select Q6](./quiz_data/nested_sql/nested_select_quiz_8.JPG)
 
+
 Question 7
 ![Nested Select Q7](./quiz_data/nested_sql/nested_select_quiz_9.JPG)
 ![Nested Select Q7](./quiz_data/nested_sql/nested_select_quiz_.JPG)
