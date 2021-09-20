@@ -11,3 +11,7 @@ where continent = 'Africa';
 --4. How many countries have an area of at least 1000000
 select count(name) from world
 where area > '1000000';
+
+--5. Baltic states population | What is the total population of ('Estonia', 'Latvia', 'Lithuania')
+select sum(population) from world
+where name in ('Estonia', 'Latvia', 'Lithuania');
