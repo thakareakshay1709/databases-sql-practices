@@ -24,3 +24,8 @@ group by continent;
 select continent, count(name) from world
 where population >= '10000000'
 group by continent;
+
+--8. List the continents that have a total population of at least 100 million.
+select continent from world
+group by continent
+having sum(population) > 100000000;
