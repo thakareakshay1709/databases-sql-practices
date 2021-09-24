@@ -28,4 +28,5 @@ Question 7
 ![SUM & COUNT Q7](./quiz_data/sum_count/sum_count_quiz_7.JPG)
 
 Question 8
-![SUM & COUNT Q8](./quiz_data/sum_count/sum_count_quiz_8.JPG)
+![SUM & COUNT Q8](./quiz_data/sum_count/sum_count_quiz_8_1.JPG)
+![SUM & COUNT Q8](./quiz_data/sum_count/sum_count_quiz_8_2.JPG)
