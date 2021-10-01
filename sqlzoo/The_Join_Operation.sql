@@ -52,3 +52,8 @@ select mdate, teamname from
 game
 JOIN eteam ON (team1=eteam.id)
 where coach like 'Fernando Santos';
+
+--7. List the player for every goal scored in a game where the stadium was 'National Stadium, Warsaw'
+select player from goal
+join game on (id=matchid)
+where stadium like 'National Stadium, Warsaw';
