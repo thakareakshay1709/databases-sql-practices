@@ -58,3 +58,11 @@ where coach like 'Fernando Santos';
 select player from goal
 join game on (id=matchid)
 where stadium like 'National Stadium, Warsaw';
+
+--8. The example query shows all goals scored in the Germany-Greece quarterfinal.
+-- Instead show the name of all players who scored a goal against Germany.
+
+SELECT distinct(player)
+FROM game JOIN goal ON matchid = id 
+WHERE (team1='GER' or team2='GER')
+and teamid <> 'GER';
