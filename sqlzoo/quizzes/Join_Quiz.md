@@ -20,3 +20,8 @@ Question 4
 Question 5
 ![Question 5](./quiz_data/join/join_quiz_5.JPG)
 
+Question 6
+![Question 6](./quiz_data/join/join_quiz_6.JPG)
+
+Question 7
+![Question 7](./quiz_data/join/join_quiz_7.JPG)
