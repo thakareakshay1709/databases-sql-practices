@@ -2,3 +2,6 @@
 SELECT id, title
 FROM movie
 WHERE yr=1962;
+
+--2. Give year of 'Citizen Kane'.
+select yr from movie where title = 'Citizen Kane';
