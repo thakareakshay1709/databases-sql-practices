@@ -10,3 +10,6 @@ select yr from movie where title = 'Citizen Kane';
 select id, title, yr from movie
 where title like '%Star Trek%'
 order by yr;
+
+--4. What id number does the actor 'Glenn Close' have?
+select id from actor where name ='Glenn Close';
