@@ -13,3 +13,18 @@ order by yr;
 
 --4. What id number does the actor 'Glenn Close' have?
 select id from actor where name ='Glenn Close';
+
+--5. What is the id of the film 'Casablanca'
+select id from movie where title like 'Casablanca';
+
+--6. Obtain the cast list for 'Casablanca'.
+-- what is a cast list?
+-- Use movieid=11768, (or whatever value you got from the previous question)
+select name from actor
+where id in (select actorid from casting where movieid='11768');
+
+--7. Obtain the cast list for the film 'Alien'
+select name from actor
+where id in 
+(select actorid from casting where movieid in
+(select id from movie where title ='Alien'));
