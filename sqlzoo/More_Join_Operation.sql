@@ -28,3 +28,17 @@ select name from actor
 where id in 
 (select actorid from casting where movieid in
 (select id from movie where title ='Alien'));
+
+--8. List the films in which 'Harrison Ford' has appeared
+select title from movie
+where id in (select movieid from casting 
+where actorid in 
+(select id from actor where name ='Harrison Ford')
+);
+
+--9. List the films where 'Harrison Ford' has appeared - but not in the starring role. [Note: the ord field of casting gives the position of the actor. If ord=1 then this actor is in the starring role]
+select title from movie
+where id in (select movieid from casting 
+where actorid in 
+(select id from actor where name ='Harrison Ford')
+and ord !=1);
