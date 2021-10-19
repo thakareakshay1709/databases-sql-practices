@@ -42,3 +42,8 @@ where id in (select movieid from casting
 where actorid in 
 (select id from actor where name ='Harrison Ford')
 and ord !=1);
+
+--10. List the films together with the leading star for all 1962 films.
+select m.title, c.actorid from movie m
+join casting c on id=movieid
+where m.yr = '1962';
