@@ -44,6 +44,11 @@ where actorid in
 and ord !=1);
 
 --10. List the films together with the leading star for all 1962 films.
-select m.title, c.actorid from movie m
-join casting c on id=movieid
-where m.yr = '1962';
+SELECT movie.title, actor.name
+FROM movie
+JOIN casting
+ON casting.movieid = movie.id
+JOIN actor
+ON actor.id = casting.actorid
+WHERE movie.yr = 1962
+AND casting.ord = 1;
