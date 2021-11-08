@@ -62,3 +62,13 @@ GROUP BY yr
 HAVING COUNT(title) > 1
 ORDER BY COUNT(title) DESC
 LIMIT 2;
+
+--12. Lead actor in Julie Andrews movies
+-- List the film title and the leading actor for all of the films 'Julie Andrews' played in.
+SELECT title, name FROM movie
+JOIN casting x ON movie.id = movieid
+JOIN actor ON actor.id =actorid
+WHERE ord=1 AND movieid IN
+(SELECT movieid FROM casting y
+JOIN actor ON actor.id=actorid
+WHERE name='Julie Andrews')
