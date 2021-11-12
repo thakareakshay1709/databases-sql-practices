@@ -71,4 +71,4 @@ JOIN actor ON actor.id =actorid
 WHERE ord=1 AND movieid IN
 (SELECT movieid FROM casting y
 JOIN actor ON actor.id=actorid
-WHERE name='Julie Andrews');
+WHERE name='Julie Andrews')
