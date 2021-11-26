@@ -78,4 +78,4 @@ WHERE name='Julie Andrews');
 SELECT name
 FROM actor
 JOIN casting ON (id = actorid AND (SELECT COUNT(ord) FROM casting WHERE actorid = actor.id AND ord=1)>=15)
-GROUP BY name;
+GROUP BY name
