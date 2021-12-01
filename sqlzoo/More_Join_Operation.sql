@@ -91,4 +91,4 @@ GROUP BY title ORDER BY COUNT(actorid) DESC, title;
 SELECT DISTINCT name
 FROM actor JOIN casting ON id=actorid
 WHERE movieid IN (SELECT movieid FROM casting JOIN actor ON (actorid=id AND name='Art Garfunkel')) AND name != 'Art Garfunkel'
-GROUP BY name
+GROUP BY name;
