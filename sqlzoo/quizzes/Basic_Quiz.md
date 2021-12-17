@@ -1,6 +1,6 @@
 # databases-sql-practices
 
-## Quiz Basic:
+## Basic SQL Quiz:
 
 Table Structure
 ![Table Structure](./quiz_data/basic/quiz_basic_0.jpg)
