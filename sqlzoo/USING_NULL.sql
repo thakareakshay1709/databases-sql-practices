@@ -13,3 +13,7 @@ SELECT teacher.name, dept.name FROM teacher INNER JOIN dept ON (teacher.dept=dep
 select teacher.name, dept.name from dept 
 right join teacher
 on (teacher.dept=dept.id);
+
+--4. Use a different JOIN so that all departments are listed.
+select teacher.name, dept.name from teacher
+right join dept on (dept.id=teacher.dept);
