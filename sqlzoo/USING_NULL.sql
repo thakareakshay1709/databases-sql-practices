@@ -32,3 +32,12 @@ select count(name), count(mobile) from teacher;
 select dept.name, count(teacher.name) from teacher
 right join dept on (dept.id = teacher.dept)
 group by dept.name;
+
+--9. Use CASE to show the name of each teacher followed by 'Sci' if the teacher is in dept 1 or 2 and 'Art' otherwise.
+select name,
+case 
+when dept in (1,2)
+then 'Sci'
+else 'Art'
+end
+from teacher;
