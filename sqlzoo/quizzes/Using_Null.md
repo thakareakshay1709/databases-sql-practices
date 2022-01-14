@@ -6,3 +6,5 @@ Table Structure
 ![Table Structure](./quiz_data/using_null/using_null_0.jpg)
 
 ![Question 1](./quiz_data/using_null/using_null_1.jpg)
+
+![Question 2](./quiz_data/using_null/using_null_2.jpg)
