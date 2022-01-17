@@ -12,3 +12,5 @@ Table Structure
 ![Question 3](./quiz_data/using_null/using_null_3.jpg)
 
 ![Question 4](./quiz_data/using_null/using_null_4.jpg)
+
+![Question 5](./quiz_data/using_null/using_null_5.jpg)
