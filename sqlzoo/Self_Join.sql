@@ -9,4 +9,4 @@ select id from stops where name ='Craiglockhart';
 select id, name from stops where id in (
 select stop from route where num = '4'
 and
-company = 'LRT')
+company = 'LRT');
