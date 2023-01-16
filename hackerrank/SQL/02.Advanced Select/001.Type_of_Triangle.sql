@@ -1,3 +1,4 @@
+-- cases
 SELECT 
 	CASE 
 		WHEN A + B > C AND A+C>B AND B+C>A THEN 
