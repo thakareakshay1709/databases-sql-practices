@@ -1,4 +1,4 @@
--- 1. Change the query shown so that it displays Nobel prizes for 1950.
+-- 1. Change the query shown so that it displays Nobel Prizes for 1950.
 SELECT YR, SUBJECT, WINNER
 FROM NOBEL
 WHERE YR = 1950;
