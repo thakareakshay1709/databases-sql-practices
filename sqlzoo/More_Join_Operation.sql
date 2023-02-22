@@ -1,4 +1,4 @@
---1. List the film where the yr is 1962 [Show id, title]
+--1. List the film where the year is 1962 [Show id, title]
 SELECT id, title
 FROM movie
 WHERE yr=1962;
